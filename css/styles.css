@@ -63,7 +63,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: inherit;
-  animation-duration: 250ms;
+  animation-duration: 2500ms;
   animation-iteration-count: 1;
 }
 .logo-link-studio {
@@ -136,7 +136,7 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--paragraph-color);
-  transition: color 250ms linear;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-list-item-mail-tel {
   margin-left: auto;
@@ -199,7 +199,7 @@ body {
   color: var(--text-color-white);
   background-color: var(--accent-color);
   cursor: pointer;
-  transition: color 250ms linear;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -297,14 +297,8 @@ body {
   left: 0;
   width: 100%;
   height: 70px;
-  overflow: auto;
-  transform: translateY(100%);
-  transition: transform 250ms linear;
 }
-.about-img-list-wrapper:hover .about-overlay,
-.about-img-list-wrapper:focus .about-overlay {
-  transform: translateY(0%);
-}
+
 /*============END SECTION ABOUT======*/
 /*===========SECTION TEAM=========*/
 
@@ -375,7 +369,7 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  transition: background-color 250ms linear;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link-icon:hover,
 .social-link-icon:focus {
@@ -387,7 +381,7 @@ body {
 }
 .team-icon {
   fill: var(--color-icon);
-  transition: fill 250ms linear;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*=========== END SECTION TEAM=========*/
 /*===========SECTION CLIENTS=======*/
@@ -416,11 +410,11 @@ body {
   border: 1px solid #afb1b8;
   width: 170px;
   height: 92px;
-  transition: border 250ms linear;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-icon {
   fill: #afb1b8;
-  transition: fill 250ms linear;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-link:hover,
 .client-link:focus {
@@ -452,8 +446,10 @@ body {
   font-size: 16px;
   line-height: 1.62;
   color: var(--text-color);
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filters-list-btn:hover,
 .filters-list-btn:focus {
@@ -665,6 +661,7 @@ body {
 .footer-social-link-icon:focus {
   background-color: var(--accent-color);
 }
+
 .footer-icon {
   fill: var(--text-color-white);
 }
